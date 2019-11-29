@@ -2,9 +2,9 @@
 #include "../ODROID/Analyzing.h"
 #include "../ODROID/Analyzing.cpp"
 
-constexpr int ANY_INVALID_ADC_VALUE = 9999;
-constexpr int INVALID_ADC_VALUE = 1024;
-constexpr int VALID_ADC_VALUE = 729;
+constexpr int ANY_INVALID_ADC_VALUE      = 9999;
+constexpr int INVALID_ADC_VALUE          = 1024;
+constexpr int VALID_ADC_VALUE            = 729;
 constexpr int NEGATIVE_INVALID_ADC_VALUE = -1024;
 
 namespace Testing
@@ -25,7 +25,7 @@ namespace Testing
 
 		Analyzer SignalAnalyzer;
 		int TestRawValueFromADC = VALID_ADC_VALUE;
-		int CheckedValue = ANY_INVALID_ADC_VALUE;
+		int CheckedValue        = ANY_INVALID_ADC_VALUE;
 
 		SignalAnalyzer.VerifyRawValue(TestRawValueFromADC, CheckedValue);
 
@@ -39,7 +39,7 @@ namespace Testing
 
 		Analyzer SignalAnalyzer;
 		int TestRawValueFromADC = VALID_ADC_VALUE;
-		int CheckedValue = ANY_INVALID_ADC_VALUE;
+		int CheckedValue        = ANY_INVALID_ADC_VALUE;
 
 		SignalAnalyzer.VerifyRawValue(TestRawValueFromADC, CheckedValue);
 
